@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Verifi",
+  "version": "1.0",
+
+  "description": "Never submit a mistyped password again!",
+  "homepage_url": "https://github.com/woodrowbarlow/verifi",
+
+  "icons": {
+    "48": "icons/verifi.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["verifi.css"],
+      "js": ["md5.js"],
+      "js": ["verifi.js"]
+    }
+  ]
+
+}

@@ -1,0 +1,7 @@
+img.verifi {
+  display: none;
+}
+
+input[type="password"]:focus + img.verifi[src^=http] {
+  display: inline-block;
+}
